@@ -96,7 +96,7 @@ export interface MatchRenderProps<TParams> {
 
 export class Match<TParams> extends React.Component<MatchProps<TParams>> { }
 
-export type NavigateFn = (to: string, options?: NavigateOptions<{}>) => void;
+export type NavigateFn = (to: string | number, options?: NavigateOptions<{}>) => void;
 
 export interface NavigateOptions<TState> {
     state?: TState;
